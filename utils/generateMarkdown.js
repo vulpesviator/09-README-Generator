@@ -1,3 +1,6 @@
+const fs = require('fs');
+const inquirer = require('inquirer');
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {}
@@ -12,6 +15,8 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  // const template = fs.redFileSync('./TEMP.md', 'utf8');
+  
   return `# ${data.title}
 
 `;

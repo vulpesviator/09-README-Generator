@@ -7,32 +7,32 @@ const questions = [
     {
         type: 'input',
         message: 'What is the title of your project?',
-        name: 'appTitle',
+        name: 'title',
     },
     {
         type: 'input',
         message: 'Please enter your project\'s description:',
-        name: 'appDescription',
+        name: 'description',
     },
     {
         type: 'input',
         message: 'Please enter your project\'s installation instructions:',
-        name: 'appInstall',
+        name: 'install',
     },
     {
         type: 'input',
         message: 'Please enter your project\'s usage information:',
-        name: 'appUsage',
+        name: 'usage',
     },
     {
         type: 'input',
         message: 'Please enter your project\'s contribution guidelines:',
-        name: 'appContributions',
+        name: 'contributions',
     },
     {
         type: 'input',
         message: 'Please enter your project\'s testing instructions:',
-        name: 'appTesting',
+        name: 'testing',
     },
     {
         type: 'list',
@@ -71,7 +71,7 @@ const questions = [
             "The Do What the Fuck You Want to Public License", 
             "The zlib/libpng License", 
             "None"],
-        name: 'appLicense',
+        name: 'license',
     },
     {
         type: 'input',
@@ -86,7 +86,9 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+
+}
 
 // TODO: Create a function to initialize app
 function init() {
