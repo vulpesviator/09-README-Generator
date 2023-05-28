@@ -19,56 +19,59 @@ function generateMarkdown(data) {
   
   return `# ${data.title}
 
-          ## Description
+  ## Description
 
-          ${data.description}
+  ${data.description}
 
-          ## Table of Contents 
-          
-          - [Installation](#installation)
-          - [Usage](#usage)
-          - [Credits](#credits)
-          - [License](#license)
+  ## Table of Contents 
+  
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
+  - [Badges](#badges)
+  - [Tests](#tests)
+  - [Contact](#contact)
 
-          ## Installation
+  ## Installation
 
-          ${data.install}
+  ${data.install}
 
-          ## Usage
+  ## Usage
 
-          ${data.usage}
+  ${data.usage}
 
-          To add a screenshot, create an \`assets/images\` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+  To add a screenshot, create an \`assets/images\` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-              \`\`\`md
-              ![alt text](assets/images/screenshot.png)
-              \`\`\`
+      \`\`\`md
+      ![alt text](assets/images/screenshot.png)
+      \`\`\`
 
-          ## Credits
+  ## Credits
 
-          ${data.credits}
+  ${data.credits}
 
-          ## License
+  ## License
 
-          [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
+  [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
 
-          ${data.license}
+  ${data.license}
 
-          ## Badges
+  ## Badges
 
-          ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+  ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
 
-          Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+  Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
 
-          ## Tests
+  ## Tests
 
-          ${data.testing}
+  ${data.testing}
 
-          ##Contact
+  ##Contact
 
-          Created by [${data.userName}](http://github.com/${data.userName})
+  Created by [${data.userName}](http://github.com/${data.userName})
 
-          ${data.userEmail}
+  ${data.userEmail}
 
 `;
 }
