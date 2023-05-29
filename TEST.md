@@ -1,8 +1,8 @@
-# The Project
+# Cult of the Lamb
 
   ## Description
 
-  a quick description
+  This is a cult like simulator where you play a cute lamb in service to an elder god
 
   ## Table of Contents 
 
@@ -16,31 +16,31 @@
 
   ## Installation
 
-  There are so many steps that I'll probably hneed to break these up as well
+  These is a list of steps on how to install this app
 
   ## Usage
 
-  Some base instructison that may need to into a list too
+  Should this be a list as well? 
 
   To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
       ```md
-      ![The Project](./assets/img.png)
+      ![Cult of the Lamb](./assets/lamb.png)
       ```
 
   ## Contributing
 
-- Sara
-- Tim
-- This should be alink
-- one/more/html
+  - Art
+- http://link.to/github
+- lamby
+- dipper
 
 
   ##License
   
-  [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
+  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
-  The MIT License
+  Mozilla Public License 2.0
 
   ## Badges
 
@@ -50,7 +50,7 @@
 
   ## Tests
 
-  examples for testings
+  Testing examples
 
   ##Questions
 
