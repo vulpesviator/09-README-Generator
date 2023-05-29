@@ -3,15 +3,57 @@ const inquirer = require('inquirer');
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license == "None") {
+    return ``;
+  }
+
+  return `##License
+  
+  [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
+
+  ${data.license}`
+}
+
+// Function to create ToC based on selection
+function generateToC(data) {
+ /*  if (data.toc == true) { */
+  if (data.license == "None") {
+    return `## Table of Contents 
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Badges](#badges)
+- [Tests](#tests)
+- [Questions](#questions)`;
+  } else {
+    return `## Table of Contents 
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Badges](#badges)
+- [Tests](#tests)
+- [Questions](#questions)`;
+  }
+/* } else {
+  return;
+} */
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -19,56 +61,47 @@ function generateMarkdown(data) {
   
   return `# ${data.title}
 
-          ## Description
+  ## Description
 
-          ${data.description}
+  ${data.description}
 
-          ## Table of Contents 
-          
-          - [Installation](#installation)
-          - [Usage](#usage)
-          - [Credits](#credits)
-          - [License](#license)
+  ${generateToC(data)}
 
-          ## Installation
+  ## Installation
 
-          ${data.install}
+  ${data.install}
 
-          ## Usage
+  ## Usage
 
-          ${data.usage}
+  ${data.usage}
 
-          To add a screenshot, create an \`assets/images\` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+  To add a screenshot, create an \`assets/images\` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-              \`\`\`md
-              ![alt text](assets/images/screenshot.png)
-              \`\`\`
+      \`\`\`md
+      ![${data.title}](${data.screenshot})
+      \`\`\`
 
-          ## Credits
+  ## Contributing
 
-          ${data.credits}
+  ${data.credits}
 
-          ## License
+  ${renderLicenseSection(data.license)}
 
-          [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
+  ## Badges
 
-          ${data.license}
+  ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
 
-          ## Badges
+  Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
 
-          ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+  ## Tests
 
-          Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+  ${data.testing}
 
-          ## Tests
+  ##Questions
 
-          ${data.testing}
+  Created by [${data.userName}](http://github.com/${data.userName})
 
-          ##Contact
-
-          Created by [${data.userName}](http://github.com/${data.userName})
-
-          ${data.userEmail}
+  If you have questions on this application, you may contact me at ${data.userEmail}
 
 `;
 }

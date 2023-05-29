@@ -16,23 +16,34 @@ const questions = [
         name: 'description',
     },
     {
+        type: 'confirm',
+        message: 'Does your project need a Table of Contents?',
+        name: 'toc',
+        default: true
+    },
+    {
         type: 'input',
-        message: 'Please enter your project\'s installation instructions:',
+        message: 'What are the steps required to install your project?',
         name: 'install',
     },
     {
         type: 'input',
-        message: 'Please enter your project\'s usage information:',
+        message: 'Please provide instructions for how to use this application:',
         name: 'usage',
     },
     {
         type: 'input',
-        message: 'Please enter your project\'s contribution guidelines:',
+        message: 'Please provide a link to the screenshot of your application:',
+        name: 'screenshot',
+    },
+    {
+        type: 'input',
+        message: 'List your collaborators, if any, with links to their GitHub profiles:',
         name: 'credits',
     },
     {
         type: 'input',
-        message: 'Please enter your project\'s testing instructions:',
+        message: 'Please provide examples on how to run tests for your application:',
         name: 'testing',
     },
     {

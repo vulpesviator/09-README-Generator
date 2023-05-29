@@ -1,53 +1,51 @@
-# One more time
+# a title
 
-          ## Description
+  ## Description
 
-          this is a description block of text that will be copy pasta
+  this is a descript
 
-          ## Table of Contents 
-          
-          - [Installation](#installation)
-          - [Usage](#usage)
-          - [Credits](#credits)
-          - [License](#license)
+  ## Table of Contents 
+  
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [Badges](#badges)
+  - [Tests](#tests)
+  - [Contact](#contact)
 
-          ## Installation
+  ## Installation
 
-          This will be how to run the app
+  installation guidelines
 
-          ## Usage
+  ## Usage
 
-          How do you use this thing
+  usage info
 
-          To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+  To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-              ```md
-              ![alt text](assets/images/screenshot.png)
-              ```
+      ```md
+      ![a title](./assets/img.jpg)
+      ```
 
-          ## Credits
+  ## Credits
 
-          Credits
+  collaborator 1, 3, 4, 5
 
-          ## License
+  
 
-          [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
+  ## Badges
 
-          The MIT License
+  ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
 
-          ## Badges
+  Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
 
-          ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+  ## Tests
 
-          Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+  testing info
 
-          ## Tests
+  ##Contact
 
-          Testing
+  Created by [vulpesviator](http://github.com/vulpesviator)
 
-          ##Contact
-
-          Created by [vulpesviator](http://github.com/vulpesviator)
-
-          vulpesviator@gmail.com
+  vulpesviator@gmail.com
 
