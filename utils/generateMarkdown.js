@@ -1,5 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+
+// An array of license selections with their badges and links
 const licensesFull = [
   {
     name: 'Apache 2.0 License',
@@ -163,7 +165,7 @@ const licensesFull = [
   },
 ]
 
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license == "None") {
@@ -175,7 +177,7 @@ function renderLicenseBadge(license) {
 
 }
 
-// TODO: Create a function that returns the license link
+// Function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license == "None") {
@@ -186,21 +188,21 @@ function renderLicenseLink(license) {
   return result[0].link;
 }
 
-// TODO: Create a function that returns the license section of README
+// Function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license == "None") {
     return ``;
   }
 
-  return `##License
+  return `## License
   
   ${renderLicenseBadge(license)}${renderLicenseLink(license)}
 
   ${license}`
 }
 
-// Function to create ToC based on selection
+// Function to create Table of Contents based on selection
 function generateToC(data) {
    if (!data.toc) {
     return;
@@ -228,6 +230,27 @@ function generateToC(data) {
   }
 }
 
+// Function to order usage instructions into a numbered list 
+function appUsage(data) {
+  const howToUse = data.usage.split(',').map(use => use.trim());
+
+  console.log(howToUse);
+
+  if (!howToUse) {
+    return ``;
+  }
+
+  let useList = '';
+
+  for (let i = 0; i < howToUse.length; i++) {
+    
+    useList += `${i + 1}. ${howToUse[i]}\n`;
+  
+  }
+
+  return useList;
+}
+
 // Function to add contributors as a list 
 function contributions(data) {
   const collaborators = data.credits.split(',').map(collaborator => collaborator.trim());
@@ -249,9 +272,8 @@ function contributions(data) {
   return contributorsList;
 }
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 function generateMarkdown(data) {
-  // const template = fs.redFileSync('./TEMP.md', 'utf8');
   
   return `# ${data.title}
 
@@ -267,25 +289,15 @@ ${data.install}
 
 ## Usage
 
-${data.usage}
-
-To add a screenshot, create an \`assets/images\` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-
 ![${data.title}](${data.screenshot})
 
+${appUsage(data)}
 
 ## Contributing
 
 ${contributions(data)}
 
 ${renderLicenseSection(data.license)}
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
 
 ## Tests
 
@@ -295,9 +307,9 @@ ${data.testing}
 
 Created by [${data.userName}](http://github.com/${data.userName})
 
-If you have questions on this application, you may contact me at ${data.userEmail}
+[Contact Me](${data.userEmail})
 
-`;
+Copyright (c) [2023] [${data.fullName}]`;
 }
 
 module.exports = generateMarkdown;
