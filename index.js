@@ -38,7 +38,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'List your collaborators, if any, with links to their GitHub profiles:',
+        message: 'List your collaborators GitHub profile links or links to any references used seperated by commas:',
         name: 'credits',
     },
     {
@@ -116,8 +116,8 @@ function init() {
             return generateMarkdown(answers);
         })
         .then(createPage => {
-            writeToFile('./TEST.md', createPage);
-            console.log('TEST.md created!');
+            writeToFile('./READIT.md', createPage);
+            console.log('READIT.md created!');
         })
         .catch((err) => {
             console.error(err);
