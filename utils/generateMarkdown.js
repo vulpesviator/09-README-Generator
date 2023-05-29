@@ -1,5 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+
+// An array of license selections with their badges and links
 const licensesFull = [
   {
     name: 'Apache 2.0 License',
@@ -163,7 +165,7 @@ const licensesFull = [
   },
 ]
 
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license == "None") {
@@ -175,7 +177,7 @@ function renderLicenseBadge(license) {
 
 }
 
-// TODO: Create a function that returns the license link
+// Function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license == "None") {
@@ -186,7 +188,7 @@ function renderLicenseLink(license) {
   return result[0].link;
 }
 
-// TODO: Create a function that returns the license section of README
+// Function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license == "None") {
@@ -200,7 +202,7 @@ function renderLicenseSection(license) {
   ${license}`
 }
 
-// Function to create ToC based on selection
+// Function to create Table of Contents based on selection
 function generateToC(data) {
    if (!data.toc) {
     return;
@@ -270,9 +272,8 @@ function contributions(data) {
   return contributorsList;
 }
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 function generateMarkdown(data) {
-  // const template = fs.redFileSync('./TEMP.md', 'utf8');
   
   return `# ${data.title}
 
