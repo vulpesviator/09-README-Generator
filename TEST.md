@@ -1,36 +1,35 @@
-# This title
+# a title
 
   ## Description
 
-  A set of descriptions
+  this is a descript
 
   ## Table of Contents 
   
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Credits](#credits)
-  - [License](#license)
-  - [Badges](#badges)
-  - [Tests](#tests)
-  - [Contact](#contact)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Credits](#credits)
+    - [Badges](#badges)
+    - [Tests](#tests)
+    - [Contact](#contact)
 
   ## Installation
 
-  some instructions
+  installation guidelines
 
   ## Usage
 
-  use it like this
+  usage info
 
   To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
       ```md
-      ![alt text](assets/images/screenshot.png)
+      ![a title](./assets/img.jpg)
       ```
 
   ## Credits
 
-  credits
+  collaborator 1, 3, 4, 5
 
   
 
@@ -42,7 +41,7 @@
 
   ## Tests
 
-  testing
+  testing info
 
   ##Contact
 

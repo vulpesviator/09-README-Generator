@@ -27,6 +27,34 @@ function renderLicenseSection(license) {
   ${data.license}`
 }
 
+// Function to create ToC based on selection
+function generateToC(data) {
+ /*  if (data.toc == true) { */
+  if (data.license == "None") {
+    return `## Table of Contents 
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [Badges](#badges)
+- [Tests](#tests)
+- [Contact](#contact)`;
+  } else {
+    return `## Table of Contents 
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+- [Badges](#badges)
+- [Tests](#tests)
+- [Contact](#contact)`;
+  }
+/* } else {
+  return;
+} */
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   // const template = fs.redFileSync('./TEMP.md', 'utf8');
@@ -37,15 +65,7 @@ function generateMarkdown(data) {
 
   ${data.description}
 
-  ## Table of Contents 
-  
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Credits](#credits)
-  - [License](#license)
-  - [Badges](#badges)
-  - [Tests](#tests)
-  - [Contact](#contact)
+  ${generateToC(data)}
 
   ## Installation
 
@@ -58,7 +78,7 @@ function generateMarkdown(data) {
   To add a screenshot, create an \`assets/images\` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
       \`\`\`md
-      ![alt text](assets/images/screenshot.png)
+      ![${data.title}](${data.screenshot})
       \`\`\`
 
   ## Credits
