@@ -28,7 +28,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Please provide instructions for how to use this application:',
+        message: 'Please provide instructions for how to use this application seperated by commas:',
         name: 'usage',
     },
     {
