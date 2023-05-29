@@ -35,20 +35,20 @@ function generateToC(data) {
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
+- [Contributing](#contributing)
 - [Badges](#badges)
 - [Tests](#tests)
-- [Contact](#contact)`;
+- [Questions](#questions)`;
   } else {
     return `## Table of Contents 
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
+- [Contributing](#contributing)
 - [License](#license)
 - [Badges](#badges)
 - [Tests](#tests)
-- [Contact](#contact)`;
+- [Questions](#questions)`;
   }
 /* } else {
   return;
@@ -81,7 +81,7 @@ function generateMarkdown(data) {
       ![${data.title}](${data.screenshot})
       \`\`\`
 
-  ## Credits
+  ## Contributing
 
   ${data.credits}
 
@@ -97,11 +97,11 @@ function generateMarkdown(data) {
 
   ${data.testing}
 
-  ##Contact
+  ##Questions
 
   Created by [${data.userName}](http://github.com/${data.userName})
 
-  ${data.userEmail}
+  If you have questions on this application, you may contact me at ${data.userEmail}
 
 `;
 }
