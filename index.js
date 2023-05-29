@@ -116,8 +116,8 @@ function init() {
             return generateMarkdown(answers);
         })
         .then(createPage => {
-            writeToFile('./TEST.md', createPage);
-            console.log('TEST.md created!');
+            writeToFile('./READIT.md', createPage);
+            console.log('READIT.md created!');
         })
         .catch((err) => {
             console.error(err);

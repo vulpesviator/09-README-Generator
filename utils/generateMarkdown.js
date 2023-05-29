@@ -271,9 +271,9 @@ ${data.usage}
 
 To add a screenshot, create an \`assets/images\` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-    \`\`\`md
-    ![${data.title}](${data.screenshot})
-    \`\`\`
+
+![${data.title}](${data.screenshot})
+
 
 ## Contributing
 
@@ -291,7 +291,7 @@ Badges aren't necessary, per se, but they demonstrate street cred. Badges let ot
 
 ${data.testing}
 
-##Questions
+## Questions
 
 Created by [${data.userName}](http://github.com/${data.userName})
 
