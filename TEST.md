@@ -6,12 +6,12 @@
 
   ## Table of Contents 
   
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Credits](#credits)
-    - [Badges](#badges)
-    - [Tests](#tests)
-    - [Contact](#contact)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [Badges](#badges)
+  - [Tests](#tests)
+  - [Contact](#contact)
 
   ## Installation
 
