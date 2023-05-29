@@ -1,37 +1,46 @@
-# a title
+# The Project
 
   ## Description
 
-  this is a descript
+  a quick description
 
   ## Table of Contents 
-  
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Credits](#credits)
-  - [Badges](#badges)
-  - [Tests](#tests)
-  - [Contact](#contact)
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Badges](#badges)
+- [Tests](#tests)
+- [Questions](#questions)
 
   ## Installation
 
-  installation guidelines
+  There are so many steps that I'll probably hneed to break these up as well
 
   ## Usage
 
-  usage info
+  Some base instructison that may need to into a list too
 
   To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
       ```md
-      ![a title](./assets/img.jpg)
+      ![The Project](./assets/img.png)
       ```
 
-  ## Credits
+  ## Contributing
 
-  collaborator 1, 3, 4, 5
+- Sara
+- Tim
+- This should be alink
+- one/more/html
 
+
+  ##License
   
+  [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
+
+  The MIT License
 
   ## Badges
 
@@ -41,11 +50,11 @@
 
   ## Tests
 
-  testing info
+  examples for testings
 
-  ##Contact
+  ##Questions
 
   Created by [vulpesviator](http://github.com/vulpesviator)
 
-  vulpesviator@gmail.com
+  If you have questions on this application, you may contact me at vulpesviator@gmail.com
 

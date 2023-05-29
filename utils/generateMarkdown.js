@@ -24,7 +24,7 @@ function renderLicenseSection(license) {
   
   [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
 
-  ${data.license}`
+  ${license}`
 }
 
 // Function to create ToC based on selection
@@ -55,6 +55,27 @@ function generateToC(data) {
 } */
 }
 
+// Function to add contributors as a list 
+function contributions(data) {
+  const collaborators = data.credits.split(',').map(collaborator => collaborator.trim());
+
+  console.log(collaborators);
+
+  if (!collaborators) {
+    return ``;
+  }
+
+  let contributorsList = '';
+
+  for (let i = 0; i < collaborators.length; i++) {
+    
+    contributorsList += `- ${collaborators[i]}\n`;
+  
+  }
+
+  return contributorsList;
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   // const template = fs.redFileSync('./TEMP.md', 'utf8');
@@ -83,7 +104,7 @@ function generateMarkdown(data) {
 
   ## Contributing
 
-  ${data.credits}
+  ${contributions(data)}
 
   ${renderLicenseSection(data.license)}
 

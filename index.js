@@ -38,7 +38,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'List your collaborators, if any, with links to their GitHub profiles:',
+        message: 'List your collaborators GitHub profile links or links to any references used seperated by commas:',
         name: 'credits',
     },
     {
