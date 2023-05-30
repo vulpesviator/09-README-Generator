@@ -20,9 +20,9 @@ To run this application locally, clone or download the repo which contains the n
 
 ## Usage
 
-
-
 ![README Generator](./assets/readme-generator-1.png)
+
+[README Generator Video](https://drive.google.com/file/d/1W4upJDEJU6qbvPea6aSCbJffdNa_bCTt/view?usp=sharing)
 
 1. Navigate to the folder where you downloaded the application in the command line,
 2. Run the command `node index.js` from the command line
