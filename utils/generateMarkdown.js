@@ -230,9 +230,22 @@ function generateToC(data) {
   }
 }
 
+// Function to include deployed URL 
+function appDeployed(data) {
+
+  if (!data.deployed) {
+    return ``;
+  }
+
+  return `
+  The site is currently deployed for review on [github pages](${data.deployedURL})
+
+  `
+}
+
 // Function to order usage instructions into a numbered list 
 function appUsage(data) {
-  const howToUse = data.usage.split(',').map(use => use.trim());
+  const howToUse = data.usage.split('.').map(use => use.trim());
 
   console.log(howToUse);
 
@@ -288,6 +301,8 @@ ${generateToC(data)}
 ${data.install}
 
 ## Usage
+
+${appDeployed(data)}
 
 ![${data.title}](${data.screenshot})
 
