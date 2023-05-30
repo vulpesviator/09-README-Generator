@@ -121,7 +121,7 @@ function writeToFile(fileName, data,) {
         if (err) {
             console.error(err);
         } else {
-            console.log("File created!");
+            console.log("README.md created!");
         }
     });
 }
@@ -130,12 +130,10 @@ function writeToFile(fileName, data,) {
 function init() {
     inquirer.prompt(questions)
         .then(answers => {
-            console.log(answers);
             return generateMarkdown(answers);
         })
         .then(createPage => {
             writeToFile('./README.md', createPage);
-            console.log('README.md created!');
         })
         .catch((err) => {
             console.error(err);

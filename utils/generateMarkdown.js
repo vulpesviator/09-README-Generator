@@ -246,9 +246,7 @@ function appDeployed(data) {
 // Function to order usage instructions into a numbered list 
 function appUsage(data) {
   const howToUse = data.usage.split(';').map(use => use.trim());
-
-  console.log(howToUse);
-
+  
   if (!howToUse) {
     return ``;
   }
@@ -267,8 +265,6 @@ function appUsage(data) {
 // Function to add contributors as a list 
 function contributions(data) {
   const collaborators = data.credits.split(',').map(collaborator => collaborator.trim());
-
-  console.log(collaborators);
 
   if (!collaborators) {
     return ``;
