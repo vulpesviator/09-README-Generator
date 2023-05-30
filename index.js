@@ -28,8 +28,21 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Please provide instructions for how to use this application seperated by commas:',
+        message: 'Please provide instructions for how to use this application seperated by semi-colons:',
         name: 'usage',
+    },
+    {
+        type: 'confirm',
+        message: 'Is the project currently deployed?',
+        name: 'deployed',
+    },
+    {
+        type: 'input',
+        message: 'Please provide a link to the deployed application:',
+        name: 'deployedURL',
+        when(answers) {
+            return answers.deployed === true
+        },
     },
     {
         type: 'input',
