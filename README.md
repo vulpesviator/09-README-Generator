@@ -20,14 +20,17 @@ To run this application locally, clone or download the repo which contains the n
 
 ## Usage
 
-![README Generator](https://user-images.githubusercontent.com/123843930/234964270-eba8ffe6-d341-4655-8d41-9b75a286e3d3.gif)
 
-1. Once loaded
-2. run `node index.js` from the command line. Answer the prompts and the README will be created in the local folder.
+
+![README Generator](./assets/readme-generator-1.png)
+
+1. Once loaded, run `node index.js` from the command line
+2. Answer the prompts and the README will be created in the local folder
 
 
 ## Contributing
 
+- [Use Inquirer.js to Create a Conversational CLI User Interface](https://pakstech.com/blog/inquirer-js/)
 - [How to use Inquirer.js](https://javascript.plainenglish.io/how-to-inquirer-js-c10a4e05ef1f)
 - [Inquirer.js Examples](https://github.com/SBoudrias/Inquirer.js/)
 - [How To Create Interactive Command-line Prompts with Inquirer.js](https://www.digitalocean.com/community/tutorials/nodejs-interactive-command-line-prompts)
@@ -41,7 +44,7 @@ To run this application locally, clone or download the repo which contains the n
 
 ## Tests
 
-Testing information
+No tests added to this application yet. 
 
 ## Questions
 
