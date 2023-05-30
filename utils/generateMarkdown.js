@@ -245,7 +245,7 @@ function appDeployed(data) {
 
 // Function to order usage instructions into a numbered list 
 function appUsage(data) {
-  const howToUse = data.usage.split('.').map(use => use.trim());
+  const howToUse = data.usage.split(';').map(use => use.trim());
 
   console.log(howToUse);
 

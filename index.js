@@ -28,7 +28,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Please provide instructions for how to use this application. Use periods to break items into a list:',
+        message: 'Please provide instructions for how to use this application seperated by semi-colons:',
         name: 'usage',
     },
     {
@@ -40,7 +40,9 @@ const questions = [
         type: 'input',
         message: 'Please provide a link to the deployed application:',
         name: 'deployedURL',
-        when: (answers) => answers('deployed') === true,
+        when(answers) {
+            return answers.deployed === true
+        },
     },
     {
         type: 'input',
@@ -132,8 +134,8 @@ function init() {
             return generateMarkdown(answers);
         })
         .then(createPage => {
-            writeToFile('./READF.md', createPage);
-            console.log('READF.md created!');
+            writeToFile('./README.md', createPage);
+            console.log('README.md created!');
         })
         .catch((err) => {
             console.error(err);
